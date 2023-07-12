@@ -1,9 +1,14 @@
 /** @format */
 
 import React from "react";
+import { Counter } from "./function/Counter";
 
 const Skill = () => {
-  return <div>Skill</div>;
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
 };
 
 export default Skill;
