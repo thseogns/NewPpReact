@@ -1,17 +1,17 @@
 /** @format */
 
 import React from "react";
-import type { RootState } from "../../../app/store";
+import type { RootState } from "../../../../app/store";
 import { useSelector, useDispatch } from "react-redux";
-import { decrement, increment } from "../../../features/counterSlice";
+import { decrement, increment } from "../../../../features/counterSlice";
 
 export function Counter() {
   const count = useSelector((state: RootState) => state.counter.value);
   const dispatch = useDispatch();
 
   return (
-    <div>
-      <div>
+    <div className="height">
+      <div className="align">
         <button
           aria-label="Increment value"
           onClick={() => dispatch(increment())}

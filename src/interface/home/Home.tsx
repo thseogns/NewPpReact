@@ -1,9 +1,15 @@
 /** @format */
 
 import React from "react";
+import AlignInterface from "../AlignInterface";
 
+import WeatherBoxCover from "./weatherBox/WeatherBoxCover";
 const Home = () => {
-  return <div>홈페이지 입니다.</div>;
+  return (
+    <AlignInterface>
+      <WeatherBoxCover />
+    </AlignInterface>
+  );
 };
 
 export default Home;

@@ -1,9 +1,10 @@
 /** @format */
 
 import React from "react";
+import AlignInterface from "../AlignInterface";
 
 const Info = () => {
-  return <div>Info</div>;
+  return <AlignInterface>Info</AlignInterface>;
 };
 
 export default Info;

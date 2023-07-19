@@ -6,6 +6,7 @@ import Navigation from "./Navigation";
 import Home from "./interface/home/Home";
 import Info from "./interface/info/Info";
 import Skill from "./interface/skill/Skill";
+import Project from "./interface/project/Project";
 const AppRouter = () => {
   return (
     <div>
@@ -13,9 +14,10 @@ const AppRouter = () => {
       <BrowserRouter>
         <Navigation />
         <Routes>
-          <Route path="/Home/*" element={<Home />} />
+          <Route path="/*" element={<Home />} />
           <Route path="/Info/*" element={<Info />} />
           <Route path="/Skill/*" element={<Skill />} />
+          <Route path="/Project/*" element={<Project />} />
         </Routes>
       </BrowserRouter>
     </div>
