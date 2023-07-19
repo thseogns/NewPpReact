@@ -10,8 +10,8 @@ export function Counter() {
   const dispatch = useDispatch();
 
   return (
-    <div className="height">
-      <div className="align">
+    <div>
+      <div>
         <button
           aria-label="Increment value"
           onClick={() => dispatch(increment())}

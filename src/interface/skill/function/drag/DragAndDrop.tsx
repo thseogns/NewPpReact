@@ -3,8 +3,8 @@
 import React, { DragEvent } from "react";
 
 const DragAndDrop = () => {
-  const dragItem = React.useRef(null);
-  const dragOverItem = React.useRef(null);
+  const dragItem = React.useRef<null | number>(null);
+  const dragOverItem = React.useRef<null | number>(null);
   const [list, setList] = React.useState([
     "Item 1",
     "Item 2",
@@ -47,6 +47,7 @@ const DragAndDrop = () => {
               dragStart(e, index);
             }}
             onDragEnter={(e) => dragEnter(e, index)}
+            onDragEnd={drop}
             key={index}
             draggable
           >

@@ -12,19 +12,23 @@ const Skill = () => {
   const skillName = ["Counter", "Resize", "ResizeDiagonal", "DragAndDrop"];
   return (
     <AlignInterface>
+      {" "}
       <SkillCover>
         <SkillName name={skillName[0]} />
         <Counter />
-      </SkillCover>
+      </SkillCover>{" "}
       <SkillCover>
+        {" "}
         <SkillName name={skillName[1]} />
         <Resize />
       </SkillCover>
       <SkillCover>
+        {" "}
         <SkillName name={skillName[2]} />
         <ResizeDiagonal />
       </SkillCover>
       <SkillCover>
+        {" "}
         <SkillName name={skillName[3]} />
         <DragAndDrop />
       </SkillCover>
