@@ -9,7 +9,7 @@ import Skill from "./interface/skill/Skill";
 import Project from "./interface/project/Project";
 const AppRouter = () => {
   return (
-    <div>
+    <div className="background">
       {" "}
       <BrowserRouter>
         <Navigation />

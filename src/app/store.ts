@@ -2,11 +2,11 @@
 
 import { configureStore } from "@reduxjs/toolkit";
 import counterReducer from "../features/counterSlice";
-import toggleReducer from "../features/displaySlice";
+import listReducer from "../features/displaySlice";
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
-    toggle: toggleReducer,
+    list: listReducer,
   },
 });
 

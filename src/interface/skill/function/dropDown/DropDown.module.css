@@ -1,0 +1,32 @@
+/** @format */
+
+.flex {
+  display: flex;
+  background-color: antiquewhite;
+  width: 100%;
+  height: 30px;
+  justify-content: center;
+}
+.center {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggleList {
+  background-color: #eee;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.listStyle {
+  padding: 7px 20px;
+  border-bottom: 1px solid black;
+}
+.listStyle:last-child {
+  border-bottom: none;
+}
+.text {
+  line-height: 2;
+  margin-right: 10px;
+}
