@@ -1,0 +1,12 @@
+/** @format */
+
+.scroll {
+  height: 500px;
+  overflow-y: auto;
+}
+.scrollCover {
+  overflow-y: auto;
+  height: 200px;
+}
+.event {
+}

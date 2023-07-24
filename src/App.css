@@ -1,7 +1,7 @@
 /** @format */
 .background {
   background-color: rgb(87, 76, 76);
-  height: 100vh;
+  padding-bottom: 500px;
 }
 .skillBackground {
   background-color: rgb(87, 76, 76);

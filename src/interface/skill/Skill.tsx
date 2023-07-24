@@ -10,6 +10,7 @@ import ResizeDiagonal from "./function/resize/ResizeDiagonal";
 import DragAndDrop from "./function/drag/DragAndDrop";
 import DropDown from "./function/dropDown/DropDown";
 import SkillSize from "./SkillSize";
+import Scroll from "./function/scroll/Scroll";
 const Skill = () => {
   const skillName = [
     "Counter",
@@ -17,6 +18,7 @@ const Skill = () => {
     "ResizeDiagonal",
     "DragAndDrop",
     "DropDown",
+    "Scroll",
   ];
   return (
     <AlignInterface>
@@ -53,6 +55,13 @@ const Skill = () => {
         <SkillName name={skillName[4]} />{" "}
         <SkillSize>
           <DropDown />
+        </SkillSize>
+      </SkillCover>
+      <SkillCover>
+        {" "}
+        <SkillName name={skillName[5]} />{" "}
+        <SkillSize>
+          <Scroll />
         </SkillSize>
       </SkillCover>
     </AlignInterface>

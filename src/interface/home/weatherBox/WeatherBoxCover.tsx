@@ -15,7 +15,7 @@ const WeatherBoxCover = () => {
       let lon = position.coords.longitude;
       //console.log('현재 내 위치는?',lat,lon)
       getWeatherByCurrentLocation(lat, lon);
-      console.log(lat);
+      console.log("dd", lat, lon);
     });
   };
   const getWeatherByCurrentLocation = async (lat: any, lon: any) => {
