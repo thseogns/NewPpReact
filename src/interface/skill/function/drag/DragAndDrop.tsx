@@ -1,7 +1,7 @@
 /** @format */
 
 import React, { DragEvent } from "react";
-
+import styles from "./DragAndDrop.module.css";
 const DragAndDrop = () => {
   const dragItem = React.useRef<null | number>(null);
   const dragOverItem = React.useRef<null | number>(null);
@@ -43,6 +43,7 @@ const DragAndDrop = () => {
       {list &&
         list.map((item, index) => (
           <div
+            className={styles.background}
             onDragStart={(e) => {
               dragStart(e, index);
             }}

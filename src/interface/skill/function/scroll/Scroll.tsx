@@ -4,10 +4,17 @@ import React from "react";
 import styles from "./Scroll.module.css";
 
 const Scroll = () => {
+  const [scrollPosition, setScrollPosition] = React.useState(true);
+
   const targetRef = React.useRef<HTMLDivElement | null>(null);
 
-  const handleScroll = () => {
-    console.log("스크롤 중...");
+  const handleScroll = (e: any) => {
+    console.log("스크롤 중...", e.target.scrollTop);
+    if (targetRef.current !== null && e.target.scrollTop > 0) {
+      setScrollPosition(false);
+    } else {
+      setScrollPosition(true);
+    }
 
     // 원하는 동작 수행
     // 여기에 스크롤이 발생했을 때 처리할 내용을 작성합니다.
@@ -33,7 +40,13 @@ const Scroll = () => {
   return (
     <div className={styles.scrollCover} ref={targetRef}>
       <div className={styles.scroll}>
-        <div>이벤트 발생 위치</div>
+        <div
+          style={
+            scrollPosition ? { position: "relative" } : { position: "absolute" }
+          }
+        >
+          {scrollPosition ? <p>이벤트종료</p> : <p>이벤트진행중..</p>}
+        </div>
       </div>
     </div>
   );

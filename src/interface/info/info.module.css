@@ -1,0 +1,6 @@
+/** @format */
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
