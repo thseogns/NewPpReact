@@ -8,3 +8,21 @@
   margin: 0;
   font-size: 28px;
 }
+.slick-arrow {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  z-index: 20;
+}
+.slick-next {
+  top: 50%;
+  right: 0;
+}
+.slick-prev {
+  top: 50%;
+
+  left: 0;
+}
+.slick-list {
+  margin: 0 15px;
+}
