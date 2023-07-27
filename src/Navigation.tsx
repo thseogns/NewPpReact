@@ -18,38 +18,40 @@ const Navigation: React.FC = () => {
   console.log(localState);
   return (
     <div className={styles.flex}>
-      <Link to="/" onClick={() => dispatch(route(0))}>
-        <TopButton
-          name={buttonName[0]}
-          toggleButton={
-            toggleButton === buttonName[0] || localState === buttonName[0]
-          }
-        />
-      </Link>
-      <Link to="/Info" onClick={() => dispatch(route(1))}>
-        <TopButton
-          name={buttonName[1]}
-          toggleButton={
-            toggleButton === buttonName[1] || localState === buttonName[1]
-          }
-        />
-      </Link>
-      <Link to="/Skill" onClick={() => dispatch(route(2))}>
-        <TopButton
-          name={buttonName[2]}
-          toggleButton={
-            toggleButton === buttonName[2] || localState === buttonName[2]
-          }
-        />
-      </Link>
-      <Link to="/Project" onClick={() => dispatch(route(3))}>
-        <TopButton
-          name={buttonName[3]}
-          toggleButton={
-            toggleButton === buttonName[3] || localState === buttonName[3]
-          }
-        />
-      </Link>
+      <div className={styles.linkCover}>
+        <Link to="/" onClick={() => dispatch(route(0))}>
+          <TopButton
+            name={buttonName[0]}
+            toggleButton={
+              toggleButton === buttonName[0] || localState === buttonName[0]
+            }
+          />
+        </Link>
+        <Link to="/Info" onClick={() => dispatch(route(1))}>
+          <TopButton
+            name={buttonName[1]}
+            toggleButton={
+              toggleButton === buttonName[1] || localState === buttonName[1]
+            }
+          />
+        </Link>
+        <Link to="/Skill" onClick={() => dispatch(route(2))}>
+          <TopButton
+            name={buttonName[2]}
+            toggleButton={
+              toggleButton === buttonName[2] || localState === buttonName[2]
+            }
+          />
+        </Link>
+        <Link to="/Project" onClick={() => dispatch(route(3))}>
+          <TopButton
+            name={buttonName[3]}
+            toggleButton={
+              toggleButton === buttonName[3] || localState === buttonName[3]
+            }
+          />
+        </Link>
+      </div>
     </div>
   );
 };

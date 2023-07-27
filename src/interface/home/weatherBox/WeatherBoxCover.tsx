@@ -4,6 +4,7 @@ import React from "react";
 import MoonLoader from "react-spinners/MoonLoader";
 import WeatherBox from "../weatherBox/WeatherBox";
 import WeatherButton from "../../../button/WeatherButton";
+import styles from "./WeatherBoxCover.module.css";
 const WeatherBoxCover = () => {
   const [weather, setWeather] = React.useState(null); //데이타 존재여부
   const [city, setCity] = React.useState(""); //버튼에서 선택한 도시
@@ -47,9 +48,15 @@ const WeatherBoxCover = () => {
 
   // 선택된 버튼 모양을 바꿔주기 위해 selectedCity={city}추가
   return (
-    <div>
-      {loading !== true ? <WeatherBox weather={weather} /> : <MoonLoader />}
-      <WeatherButton cities={cities} setCity={setCity} selectedCity={city} />
+    <div className={styles.cover}>
+      <img
+        src={`${process.env.PUBLIC_URL}/image/home/centralpark.jpg`}
+        alt="centralpark"
+      />
+      <div className={styles.weatherCover}>
+        {loading !== true ? <WeatherBox weather={weather} /> : <MoonLoader />}
+        <WeatherButton cities={cities} setCity={setCity} selectedCity={city} />
+      </div>
     </div>
   );
 };

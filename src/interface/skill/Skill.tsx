@@ -22,48 +22,50 @@ const Skill = () => {
   ];
   return (
     <AlignInterface>
-      {" "}
-      <SkillCover>
-        <SkillName name={skillName[0]} />
-        <SkillSize>
-          <Counter />
-        </SkillSize>
-      </SkillCover>{" "}
-      <SkillCover>
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
         {" "}
-        <SkillName name={skillName[1]} />{" "}
-        <SkillSize>
-          <Resize />
-        </SkillSize>
-      </SkillCover>
-      <SkillCover>
-        {" "}
-        <SkillName name={skillName[2]} />{" "}
-        <SkillSize>
-          <ResizeDiagonal />
-        </SkillSize>
-      </SkillCover>
-      <SkillCover>
-        {" "}
-        <SkillName name={skillName[3]} />{" "}
-        <SkillSize>
-          <DragAndDrop />
-        </SkillSize>
-      </SkillCover>
-      <SkillCover>
-        {" "}
-        <SkillName name={skillName[4]} />{" "}
-        <SkillSize>
-          <DropDown />
-        </SkillSize>
-      </SkillCover>
-      <SkillCover>
-        {" "}
-        <SkillName name={skillName[5]} />{" "}
-        <SkillSize>
-          <Scroll />
-        </SkillSize>
-      </SkillCover>
+        <SkillCover>
+          <SkillName name={skillName[0]} />
+          <SkillSize>
+            <Counter />
+          </SkillSize>
+        </SkillCover>{" "}
+        <SkillCover>
+          {" "}
+          <SkillName name={skillName[1]} />{" "}
+          <SkillSize>
+            <Resize />
+          </SkillSize>
+        </SkillCover>
+        <SkillCover>
+          {" "}
+          <SkillName name={skillName[2]} />{" "}
+          <SkillSize>
+            <ResizeDiagonal />
+          </SkillSize>
+        </SkillCover>
+        <SkillCover>
+          {" "}
+          <SkillName name={skillName[3]} />{" "}
+          <SkillSize>
+            <DragAndDrop />
+          </SkillSize>
+        </SkillCover>
+        <SkillCover>
+          {" "}
+          <SkillName name={skillName[4]} />{" "}
+          <SkillSize>
+            <DropDown />
+          </SkillSize>
+        </SkillCover>
+        <SkillCover>
+          {" "}
+          <SkillName name={skillName[5]} />{" "}
+          <SkillSize>
+            <Scroll />
+          </SkillSize>
+        </SkillCover>
+      </div>
     </AlignInterface>
   );
 };

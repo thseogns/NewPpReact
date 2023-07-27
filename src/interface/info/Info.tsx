@@ -3,14 +3,22 @@
 import React from "react";
 import AlignInterface from "../AlignInterface";
 import MyHomeMap from "./map/MyHomeMap";
-import DetailInfomation from "./DetailInfomation";
-import styles from "./info.module.css";
+import InfoBox from "./InfoBox";
+import styles from "./Info.module.css";
+import { BiMapAlt } from "react-icons/bi";
 const Info = () => {
   return (
     <AlignInterface>
       <div className={styles.flex}>
-        <DetailInfomation />
-        <MyHomeMap />
+        <InfoBox />{" "}
+        <h2>
+          {" "}
+          <BiMapAlt />
+          MyHome
+        </h2>
+        <div className={styles.mapCover}>
+          <MyHomeMap />
+        </div>
       </div>
     </AlignInterface>
   );

@@ -5,3 +5,11 @@
   width: 100%;
   background-color: rgb(51, 26, 26);
 }
+.linkCover {
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+.linkCover a {
+  text-decoration: none;
+}
