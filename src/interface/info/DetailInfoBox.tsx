@@ -1,8 +1,7 @@
 /** @format */
 import React from "react";
-import InfoButton from "../../button/InfoButton";
 import styles from "./DetailInfoBox.module.css";
-import { CgNametag } from "react-icons/cg";
+
 import { MdDriveFileRenameOutline } from "react-icons/md";
 import { FaBirthdayCake } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";

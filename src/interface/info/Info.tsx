@@ -4,8 +4,9 @@ import React from "react";
 import AlignInterface from "../AlignInterface";
 import MyHomeMap from "./map/MyHomeMap";
 import InfoBox from "./InfoBox";
-import styles from "./Info.module.css";
+
 import { BiMapAlt } from "react-icons/bi";
+import styles from "./Info.module.css";
 const Info = () => {
   return (
     <AlignInterface>
