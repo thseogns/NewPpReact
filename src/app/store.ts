@@ -3,10 +3,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import counterReducer from "../features/counterSlice";
 import listReducer from "../features/displaySlice";
+import loginReducer from "../features/loginSlice";
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
     list: listReducer,
+    login: loginReducer,
   },
 });
 
