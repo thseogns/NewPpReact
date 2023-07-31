@@ -4,6 +4,9 @@ import styled from "styled-components";
 import Slick from "./slick/Slick";
 import styles from "./ProjectItem.module.css";
 
+import { useDispatch } from "react-redux";
+import { hover } from "../../features/displaySlice";
+
 interface itemsProps {
   item: string;
   name: string;
@@ -37,11 +40,29 @@ const items: itemsProps[] = [
 ];
 
 function ProjectItem() {
+  const dispatch = useDispatch();
+
+  let imgAlt = "";
+  const handleMouseHover = (e: any) => {
+    imgAlt = e.target.alt;
+    // imgAlt = e.currentTarget.alt;
+    // console.log("마우스 오버한값입니다.", e.currentTarget.alt);
+    dispatch(hover(imgAlt));
+  };
+  const handleMouseOut = () => {
+    dispatch(hover(null));
+  };
   return (
     <Slick>
       {items.map((item, index) => (
         <SliderItem key={index}>
-          <a href={item.href} target="_blank" rel="noreferrer">
+          <a
+            href={item.href}
+            target="_blank"
+            rel="noreferrer"
+            onMouseEnter={handleMouseHover}
+            onMouseOut={handleMouseOut}
+          >
             <img className={styles.imgStyle} src={item.item} alt={item.name} />
           </a>
         </SliderItem>
