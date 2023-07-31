@@ -12,6 +12,7 @@ import DropDown from "./function/dropDown/DropDown";
 import SkillSize from "./SkillSize";
 import Scroll from "./function/scroll/Scroll";
 import Login from "./function/login/Login";
+import CountUp from "./function/countUp/CountUp";
 const Skill = () => {
   const skillName = [
     "Counter",
@@ -20,7 +21,8 @@ const Skill = () => {
     "DragAndDrop",
     "DropDown",
     "Scroll",
-    "Login 제작중 입니다",
+    "Login",
+    "CountUp",
   ];
   return (
     <AlignInterface>
@@ -72,6 +74,13 @@ const Skill = () => {
           <SkillName name={skillName[6]} />{" "}
           <SkillSize>
             <Login />
+          </SkillSize>
+        </SkillCover>
+        <SkillCover>
+          {" "}
+          <SkillName name={skillName[7]} />{" "}
+          <SkillSize>
+            <CountUp />
           </SkillSize>
         </SkillCover>
       </div>

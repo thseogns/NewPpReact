@@ -37,6 +37,11 @@ const items: itemsProps[] = [
     href: "https://creative-nasturtium-945124.netlify.app/",
     name: "TsTodoList",
   },
+  {
+    item: `${process.env.PUBLIC_URL}/project/tire.png`,
+    href: "https://thseogns.github.io/tire/",
+    name: "tire",
+  },
 ];
 
 function ProjectItem() {
