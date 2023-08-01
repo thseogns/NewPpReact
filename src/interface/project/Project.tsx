@@ -9,8 +9,9 @@ import HoverPage from "./HoverPage";
 const Project = () => {
   return (
     <AlignInterface>
-      <HoverPage />
       <div className={styles.slickCover}>
+        {" "}
+        <HoverPage />
         <Slick>
           <ProjectItem />
         </Slick>
