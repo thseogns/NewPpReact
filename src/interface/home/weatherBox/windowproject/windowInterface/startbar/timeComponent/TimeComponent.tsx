@@ -22,6 +22,7 @@ const TimeComponent = () => {
     let date = today.getDate(); // 날짜
     let hours = today.getHours(); // 시
     let minutes = today.getMinutes(); // 분
+
     stringMinutes = minutes.toString();
     //시간
     if (month < 10 && month.toString().length < 3) {
@@ -33,12 +34,13 @@ const TimeComponent = () => {
     }
     if (minutes < 10 && minutes.toString().length < 3) {
       stringMinutes = "0" + minutes.toString();
-      console.log(stringMinutes);
     }
     if (hours > 12) {
       hours = hours - 12;
     }
-
+    if (hours === 0) {
+      hours = 12;
+    }
     setHourOfTime(hours);
 
     // if (hours > 11) {
