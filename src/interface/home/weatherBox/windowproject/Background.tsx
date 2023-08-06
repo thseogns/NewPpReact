@@ -3,7 +3,7 @@
 import React from "react";
 import styles from "./Background.module.css";
 import StartBar from "./windowInterface/startbar/Startbar";
-import FileComponent from "./windowInterface/windowFile/File";
+import FileCover from "./windowInterface/windowFile/FileCover";
 import Window from "./windowInterface/window/Window";
 import type { RootState } from "../../../../app/store";
 import { useSelector } from "react-redux";
@@ -35,7 +35,7 @@ const Background = () => {
           alt="Background"
         />
       )}{" "}
-      <FileComponent />
+      <FileCover />
       {value && <Window />}
       <StartBar />
     </div>
