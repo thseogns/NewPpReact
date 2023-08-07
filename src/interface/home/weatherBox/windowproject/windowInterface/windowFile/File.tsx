@@ -2,8 +2,13 @@
 
 import React, { useState } from "react";
 import styles from "./File.module.css";
-
+import { useDispatch } from "react-redux";
+import {
+  pageName,
+  windowDisplay,
+} from "../../../../../../features/windowSlice";
 const File = () => {
+  const dispatch = useDispatch();
   const [count, setCount] = useState(1);
   const fileName = [
     { name: "바탕화면", img: "mypc" },
@@ -16,6 +21,10 @@ const File = () => {
   const handleClick: React.MouseEventHandler<HTMLLIElement> = (e) => {
     const patchName = e.currentTarget.getAttribute("data-name");
     console.log(patchName);
+    if (patchName !== null) {
+      dispatch(pageName(patchName));
+      dispatch(windowDisplay(true));
+    }
   };
   return (
     <ul className={styles.folderCover}>

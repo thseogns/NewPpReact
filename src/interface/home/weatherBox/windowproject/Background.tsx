@@ -10,7 +10,7 @@ import { useSelector } from "react-redux";
 
 const Background = () => {
   const hoverElementName = useSelector((state: RootState) => state.list.hover);
-  let value = useSelector((state: RootState) => state.window.windowToggle);
+  let value = useSelector((state: RootState) => state.window.windowPageDisplay);
   const number = useSelector(
     (state: RootState) => state.window.backgroundNumber
   );
