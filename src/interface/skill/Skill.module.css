@@ -1,0 +1,7 @@
+/** @format */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+  grid-template-rows: 1fr 1fr 1fr;
+}

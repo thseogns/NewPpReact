@@ -13,6 +13,7 @@ import SkillSize from "./SkillSize";
 import Scroll from "./function/scroll/Scroll";
 import Login from "./function/login/Login";
 import CountUp from "./function/countUp/CountUp";
+import styles from "./Skill.module.css";
 const Skill = () => {
   const skillName = [
     "Counter",
@@ -26,7 +27,7 @@ const Skill = () => {
   ];
   return (
     <AlignInterface>
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <div className={styles.grid}>
         {" "}
         <SkillCover>
           <SkillName name={skillName[0]} />
