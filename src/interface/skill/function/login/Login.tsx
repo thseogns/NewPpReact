@@ -32,7 +32,10 @@ const Login: React.FC<LoginProps> = ({ onSubmit }) => {
   };
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form
+        style={{ display: "flex", flexDirection: "column" }}
+        onSubmit={handleSubmit}
+      >
         <input
           type="text"
           value={userName}
