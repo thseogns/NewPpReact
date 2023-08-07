@@ -42,6 +42,16 @@ const items: itemsProps[] = [
     href: "https://thseogns.github.io/tire/",
     name: "tire",
   },
+  {
+    item: `${process.env.PUBLIC_URL}/project/air.png`,
+    href: "https://imaginative-dieffenbachia-fa52f5.netlify.app/",
+    name: "air",
+  },
+  {
+    item: `${process.env.PUBLIC_URL}/project/frz_title.png`,
+    href: "https://thseogns.github.io/frizm/",
+    name: "frz_title",
+  },
 ];
 
 function ProjectItem() {
