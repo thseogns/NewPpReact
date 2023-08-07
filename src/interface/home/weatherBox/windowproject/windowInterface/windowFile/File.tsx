@@ -23,6 +23,11 @@ const File = () => {
     console.log(patchName);
     if (patchName !== null) {
       dispatch(pageName(patchName));
+      if (patchName === "바탕화면") {
+        dispatch(windowDisplay(false));
+        return;
+      }
+
       dispatch(windowDisplay(true));
     }
   };
