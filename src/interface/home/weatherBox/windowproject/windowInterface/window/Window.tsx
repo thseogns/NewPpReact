@@ -14,7 +14,7 @@ const Window = () => {
   return (
     <div className={styles.window}>
       <WindowHeader />
-      {selectPageName === "바탕화면" && <BackgroundPage />}
+
       {/* {value === "내정보" && <MyInfo />}
       {value === "기술" && <WindowSkill />}
       {value === "프로젝트" && <MainProject />}

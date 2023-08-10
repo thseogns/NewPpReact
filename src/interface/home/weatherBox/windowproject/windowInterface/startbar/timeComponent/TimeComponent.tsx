@@ -23,17 +23,22 @@ const TimeComponent = () => {
     let hours = today.getHours(); // 시
     let minutes = today.getMinutes(); // 분
 
-    stringMinutes = minutes.toString();
     //시간
     if (month < 10 && month.toString().length < 3) {
       stringMonth = "0" + month.toString();
+    } else {
+      stringMonth = month.toString();
     }
 
     if (date < 10 && date.toString().length < 3) {
       stringDate = "0" + date.toString();
+    } else {
+      stringDate = date.toString();
     }
     if (minutes < 10 && minutes.toString().length < 3) {
       stringMinutes = "0" + minutes.toString();
+    } else {
+      stringMinutes = minutes.toString();
     }
     if (hours > 12) {
       hours = hours - 12;
@@ -42,7 +47,7 @@ const TimeComponent = () => {
       hours = 12;
     }
     setHourOfTime(hours);
-
+    console.log("데이트값", date);
     // if (hours > 11) {
     //   document.getElementById("mf").innerHTML = "오후";
     // } else {
