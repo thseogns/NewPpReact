@@ -6,7 +6,7 @@ import styles from "./Home.module.css";
 import WeatherBoxCover from "./weatherBox/WeatherBoxCover";
 import { TiWeatherPartlySunny } from "react-icons/ti";
 import WindowProject from "./weatherBox/windowproject/WindowProject";
-import MemoBox from "./memoBox/MemoBox";
+
 const Home = () => {
   return (
     <AlignInterface>
@@ -17,7 +17,6 @@ const Home = () => {
         Today Weather
       </h1>
       <WeatherBoxCover />
-      <MemoBox />
     </AlignInterface>
   );
 };

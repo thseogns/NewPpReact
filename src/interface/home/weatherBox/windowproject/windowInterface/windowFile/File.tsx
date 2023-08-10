@@ -13,7 +13,7 @@ const File = () => {
   const fileName = [
     { name: "바탕화면", img: "mypc" },
     { name: "내컴퓨터", img: "net" },
-    { name: "제어판", img: "pngegg" },
+    { name: "메모장", img: "memo" },
     { name: "사진폴더", img: "folder" },
     { name: "휴지통", img: "trash" },
   ];
