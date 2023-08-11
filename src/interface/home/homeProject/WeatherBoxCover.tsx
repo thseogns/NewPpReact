@@ -2,7 +2,7 @@
 
 import React from "react";
 import MoonLoader from "react-spinners/MoonLoader";
-import WeatherBox from "../weatherBox/WeatherBox";
+import WeatherBox from "../homeProject/WeatherBox";
 import WeatherButton from "../../../button/WeatherButton";
 import styles from "./WeatherBoxCover.module.css";
 const WeatherBoxCover = () => {

@@ -16,7 +16,7 @@ interface MemoListProps {
 
 const MemoList: React.FC<MemoListProps> = (props) => {
   return (
-    <ul className={styles["memos-list"]}>
+    <ul className={styles.memoList}>
       {props.memos.map((memo) => (
         <Memo
           key={memo.id}

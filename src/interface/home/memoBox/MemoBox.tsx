@@ -4,6 +4,7 @@ import React, { useState, useEffect, useCallback } from "react";
 
 import MeMoList from "./MemoList";
 import AddMemo from "./AddMemo";
+import styles from "./MemoBox.module.css";
 interface Memo {
   id: string;
   title: string;
@@ -82,15 +83,17 @@ const MemoBox = () => {
   }
 
   return (
-    <React.Fragment>
-      <section>
-        <AddMemo onAddMemo={addMemoHandler} />
-      </section>
-      <section>
-        <button onClick={fetchMemosHandler}>Fetch Memos</button>
-      </section>
-      <section>{content}</section>
-    </React.Fragment>
+    <div className={styles.memoCover}>
+      <div className={styles.addMemoCover}>
+        <section>
+          <AddMemo onAddMemo={addMemoHandler} />
+        </section>
+        <section>
+          <button onClick={fetchMemosHandler}>Fetch Memos</button>
+        </section>
+      </div>
+      <section className={styles.scroll}>{content}</section>
+    </div>
   );
 };
 

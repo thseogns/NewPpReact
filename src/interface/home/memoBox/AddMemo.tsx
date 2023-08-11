@@ -2,6 +2,7 @@
 
 import React from "react";
 import styles from "./AddMemo.module.css";
+import BasicButton from "../../../button/BasicButton";
 interface AddMemoProps {
   onAddMemo: (memo: {
     title: string;
@@ -31,19 +32,26 @@ const AddMemo: React.FC<AddMemoProps> = (props) => {
 
   return (
     <form onSubmit={submitHandler}>
-      <div className={styles.control}>
-        <label htmlFor="title">Title</label>
-        <input type="text" id="title" ref={titleRef} />
+      <div className={styles.flex}>
+        <div className={styles.control}>
+          <label htmlFor="title">Title</label>
+
+          <input type="text" id="title" ref={titleRef} />
+        </div>{" "}
       </div>
+
       <div className={styles.control}>
-        <label htmlFor="memo-text">memo Text</label>
+        <label htmlFor="memo-text">Memo Text</label>
         <textarea rows={rows} id="memo-text" ref={memoTextRef}></textarea>
       </div>
-      <div className={styles.control}>
-        <label htmlFor="date">Release Date</label>
-        <input type="text" id="date" ref={releaseDateRef} />
+
+      <div className={styles.flexBtween}>
+        <div className={styles.control}>
+          <label htmlFor="date">Release Date</label>
+          <input type="text" id="date" ref={releaseDateRef} />
+        </div>
+        <BasicButton>Add Memo</BasicButton>
       </div>
-      <button>Add Movie</button>
     </form>
   );
 };

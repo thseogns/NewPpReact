@@ -9,6 +9,6 @@
   background-color: white;
 
   box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.5);
-  overflow-y: scroll;
-  height: 93.3vh;
+
+  height: 93.3%;
 }

@@ -3,9 +3,9 @@
 import React from "react";
 import AlignInterface from "../AlignInterface";
 import styles from "./Home.module.css";
-import WeatherBoxCover from "./weatherBox/WeatherBoxCover";
+import WeatherBoxCover from "./homeProject/WeatherBoxCover";
 import { TiWeatherPartlySunny } from "react-icons/ti";
-import WindowProject from "./weatherBox/windowproject/WindowProject";
+import WindowProject from "./homeProject/windowproject/WindowProject";
 
 const Home = () => {
   return (

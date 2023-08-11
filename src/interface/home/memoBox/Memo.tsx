@@ -9,7 +9,7 @@ interface MemoProps {
 }
 const Memo: React.FC<MemoProps> = (props) => {
   return (
-    <li className={styles.movie}>
+    <li className={styles.memo}>
       <h2>{props.title}</h2>
       <h3>{props.releaseDate}</h3>
       <p>{props.memoText}</p>
