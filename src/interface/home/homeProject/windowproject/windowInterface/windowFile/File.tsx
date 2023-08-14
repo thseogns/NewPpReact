@@ -12,7 +12,7 @@ const File = () => {
   const [count, setCount] = useState(1);
   const fileName = [
     { name: "바탕화면", img: "mypc" },
-    { name: "내컴퓨터", img: "net" },
+    { name: "내기술", img: "net" },
     { name: "메모장", img: "memo" },
     { name: "사진폴더", img: "folder" },
     { name: "휴지통", img: "trash" },
