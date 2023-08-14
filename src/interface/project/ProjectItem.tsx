@@ -52,6 +52,11 @@ const items: itemsProps[] = [
     href: "https://thseogns.github.io/frizm/",
     name: "frz_title",
   },
+  {
+    item: `${process.env.PUBLIC_URL}/project/빙그레.png`,
+    href: "https://thseogns.github.io/pf1/",
+    name: "빙그레",
+  },
 ];
 
 function ProjectItem() {
