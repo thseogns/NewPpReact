@@ -23,7 +23,10 @@ const InfoBox = () => {
           <div className={styles.DetailInfoCover}>
             <DetailInfoBox />
             <p>
-              장점:포기하지않는 열정, 배우면된다는 마음가짐, 실수도 배움의 일부
+              좌우명: "방향이 틀리지 않는다면 언젠간 목표에 도달한다."
+              <br />
+              마인드: 포기하지않는 열정, 배우면된다는 마음가짐, 실수도 배움의
+              일부
             </p>
           </div>
           <div className={styles.buttonLayout}>
