@@ -2,8 +2,11 @@
 
 import React from "react";
 import styles from "./BackgroundPage.module.css";
-const BackgroundPage = () => {
-  return <div className={styles.scroll}>BackgroundPage</div>;
+type BackgroundProps = {
+  children: React.ReactNode;
+};
+const BackgroundPage = ({ children }: BackgroundProps) => {
+  return <div className={styles.scroll}>{children}</div>;
 };
 
 export default BackgroundPage;

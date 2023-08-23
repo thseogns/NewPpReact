@@ -1,5 +1,6 @@
 /** @format */
 
 .scroll {
-  overflow-y: scroll;
+  height: 93.3%;
+  overflow: auto;
 }

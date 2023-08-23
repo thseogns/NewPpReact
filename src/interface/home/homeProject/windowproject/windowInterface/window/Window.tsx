@@ -9,6 +9,7 @@ import type { RootState } from "../../../../../../app/store";
 import { useSelector } from "react-redux";
 import MemoBox from "../../../../memoBox/MemoBox";
 import MySkill from "./windowPage/MySkill";
+import CounterList from "../../counterList/CounterList";
 const Window = () => {
   const selectPageName = useSelector(
     (state: RootState) => state.window.windowPageName
@@ -16,12 +17,15 @@ const Window = () => {
   return (
     <div className={styles.window}>
       <WindowHeader />
-      {selectPageName === "메모장" && <MemoBox />}
-      {selectPageName === "내기술" && <MySkill />}
-      {/* {value === "내정보" && <MyInfo />}
+      <BackgroundPage>
+        {selectPageName === "메모장" && <MemoBox />}
+        {selectPageName === "내기술" && <MySkill />}
+        {selectPageName === "숫자기록" && <CounterList />}
+        {/* {value === "내정보" && <MyInfo />}
       {value === "기술" && <WindowSkill />}
    
       {value === "서브프로젝트" && <SubProject />} */}
+      </BackgroundPage>
     </div>
   );
 };

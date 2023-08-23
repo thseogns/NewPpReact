@@ -15,6 +15,7 @@ const File = () => {
     { name: "내기술", img: "net" },
     { name: "메모장", img: "memo" },
     { name: "사진폴더", img: "folder" },
+    { name: "숫자기록", img: "counter" },
     { name: "휴지통", img: "trash" },
   ];
 
